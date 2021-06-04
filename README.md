@@ -1,7 +1,17 @@
 Hartree-Fock program
 ====================
 
-A simple implementation of the Hartree-Fock algorithm. This program was written in the context of the [Quantum Chemistry II](https://github.com/grimme-lab/qc2-teaching) course taught in the summer term of 2021.  
+A simple implementation of the Hartree-Fock algorithm. It uses a STO-6G basis set which is generated from each Slater exponent in the input file. The following calculations can be performed (in a rather rudimentary manner):
+ - RHF
+ - UHF
+ - RMP2
+ - geometry optimization (numerical, gradient descent)
+ - optimization of Slater exponents (numerical, gradient descent)
+ - charge density along z-axis
+ - Mulliken charges
+ - normalization check   
+
+This program was written in the context of the [Quantum Chemistry II](https://github.com/grimme-lab/qc2-teaching) course taught in the summer term of 2021.  
 
 The program was developed using the [Fortran Package Manager (fpm)](https://github.com/fortran-lang/fpm).  
 Run with `fpm run -- molecules/h2.in`.
