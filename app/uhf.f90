@@ -778,7 +778,7 @@ contains
     do i = 1, nbf
       do j = 1, i
         do k = 1, i
-          do l = 1, merge(j, k, i == k)
+          do l = 1, merge(j, k, i == k) ! if i=k, l to j, else l to k
             call twoint( &
               xyz(:, bf_atom_map(i)), xyz(:, bf_atom_map(j)), &
               xyz(:, bf_atom_map(k)), xyz(:, bf_atom_map(l)), &
