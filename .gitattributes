@@ -1,0 +1,3 @@
+plots/* linguist-documentation
+src/* linguist-vendored
+app/* -linguist-vendored
